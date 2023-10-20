@@ -1,0 +1,49 @@
+.styledRow .container .row-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0 25px 0;
+}
+
+.styledRow .container .row-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.styledRow .container .row-cards .card {
+  position: relative;
+}
+/* .styledRow .container .row-cards a{
+  text-decoration: dashed;
+} */
+/* .styledRow .container .row-cards a:hover{
+  text-decoration: solid;
+} */
+.styledRow .container .row-cards .card img {
+  width: 100%;
+  height: 450px;
+}
+
+.styledRow .container .row-cards .card h3 {
+  font-family: "Helvetica for Target", HelveticaForTarget, Targetica,
+    "HelveticaNeue for Target", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  vertical-align: baseline;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 23px;
+  margin: 8px 0px 8px;
+}
+
+.styledRow .container .row-cards .card p {
+  font-size: 310%;
+  color: #cc0000;
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  z-index: 1;
+}
