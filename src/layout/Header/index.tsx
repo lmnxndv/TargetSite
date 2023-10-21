@@ -6,6 +6,7 @@ import News from "./News";
 import "./style.css";
 import SignIn from "./SignIn";
 import { Link } from "react-router-dom";
+import Cart from "../../Components/Cart";
 
 const Header = () => {
   return (
@@ -27,6 +28,7 @@ const Header = () => {
           <Delivery />
           <SearchBar />
           <SignIn />
+          <Cart/>
         </div>
       </div>
     </header>
