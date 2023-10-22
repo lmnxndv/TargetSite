@@ -15,3 +15,70 @@ header {
   left: 0;
   z-index: 1;
 }
+.shoe-list,
+.women-clothes-list,
+.men-clothes-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shoe-list .shoe-card,
+.women-clothes-list .women-card,
+.men-clothes-list .men-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.shoe-list .shoe-card img,
+.shoe-list .shoe-card h3,
+.shoe-list .shoe-card p,
+.shoe-list .shoe-card button {
+  margin: 10px 0;
+}
+.shoe-list .shoe-card img,
+.women-clothes-list .women-card img,
+.men-clothes-list .men-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  transition: transform 0.7s ease-in-out;
+}
+.shoe-list .shoe-card img:hover,
+.women-clothes-list .women-card img:hover,
+.men-clothes-list .men-card img:hover {
+  transform: scaleX(-1);
+}
+.shoe-list .shoe-card button,
+.women-clothes-list .women-card button,
+.men-clothes-list .men-card button{
+  width: 100px;
+  height: 32px;
+  background-color: rgb(204, 0, 0);
+  color: white;
+  border: none;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 0px 8px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.shoe-list .shoe-card button:hover,
+.women-clothes-list .women-card button:hover,
+.men-clothes-list .men-card button:hover {
+  opacity: 1;
+}
+.shoe-list a,
+.women-clothes-list a, .men-clothes-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.ant-rate {
+  font-size: 14px;
+}

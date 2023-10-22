@@ -227,3 +227,86 @@ export const womenClothes: Products[] = [
     rating: 4.7,
   },
 ];
+
+export const menClothes: Products[] = [
+  {
+    id: 1,
+    name: "Retro Crest T-shirt in Eggshell",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/401/3846/100/2/104967730/104967730_1_720x928.webp",
+    price: 49.99,
+    rating: 4.5,
+  },
+  {
+    id: 2,
+    name: "Worker Shirt in Patch Green",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/406/3392/113/8/117926980/117926980_1_720x928.webp",
+    price: 39.99,
+    rating: 4.2,
+  },
+  {
+    id: 3,
+    name: "Textured Stripe T-Shirt in Pottery Blue",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/406/3828/100/3/111928240/111928240_1_720x928.webp",
+    price: 29.99,
+    rating: 4.8,
+  },
+  {
+    id: 4,
+    name: "Textured Stripe T-Shirt in Terracotta/Navy",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/406/3828/100/3/111926080/111926080_1_720x928.webp",
+    price: 59.99,
+    rating: 4.0,
+  },
+  {
+    id: 5,
+    name: "Otto Organic Cotton Polo in Red",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/70/705/3856/100/1/126196240/126196240_1_720x928.webp",
+    price: 69.99,
+    rating: 4.6,
+  },
+  {
+    id: 6,
+    name: "Chenille Crew Neck Sweatshirt in Eggshell",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/406/3651/200/9/105577120/105577120_1_720x928.webp",
+    price: 34.99,
+    rating: 4.3,
+  },
+  {
+    id: 7,
+    name: "We Dream in Colours Oversize Tee in Dusk Rose",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/77/772/7864/1/1/139043740/139043740_1_720x928.webp",
+    price: 19.99,
+    rating: 4.4,
+  },
+  {
+    id: 8,
+    name: "Stacked Outline Logo Crew Neck Sweatshirt in Bright White",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/406/3651/200/9/105578020/105578020_1_720x928.webp",
+    price: 44.99,
+    rating: 4.1,
+  },
+  {
+    id: 9,
+    name: "Brushstroke Tee in Black",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/40/406/3651/200/7/105577390/105577390_1_720x928.webp",
+    price: 79.99,
+    rating: 4.2,
+  },
+  {
+    id: 10,
+    name: "Oversize Puffer Peace Tee in Black",
+    image:
+      "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/77/772/7864/1/1/136793320/136793320_1_720x928.webp",
+    price: 54.99,
+    rating: 4.7,
+  },
+];

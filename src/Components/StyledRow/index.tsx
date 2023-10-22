@@ -11,7 +11,7 @@ const StyledRow: React.FC = () => {
         </div>
         <div className="row-cards">
           {mediaBlock.map((block: MediaBlock) => (
-            <Link to={`/product/${block.id}`} key={block.id}>
+            <Link to={`/${block.id}/product`} key={block.id}>
               <div className="card">
                 <img src={block.image} alt={block.name} />
                 <h3>{block.name}</h3>
