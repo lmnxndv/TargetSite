@@ -1,8 +1,18 @@
 .Cart {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
+}
+.Cart .empty {
+  width: 80%;
+  text-align: center;
+  padding: 40px 60px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 6px 12px 4px,
+    rgba(0, 0, 0, 0.04) 0px 4px 10px 2px, rgba(0, 0, 0, 0.06) 0px 2px 8px,
+    rgba(0, 0, 0, 0.04) 0px 2px 4px;
+    margin: 30px 0;
+    border-radius: 9px;
 }
 .Cart .product-card {
   width: 60%;
@@ -16,7 +26,8 @@
   margin: 20px;
   box-shadow: 1px 4px 8px -1px rgba(0, 0, 0, 0.42);
 }
-.Cart .product-card  .product-picture img {
+.Cart .product-card .product-picture img ,
+.Cart .empty img{
   width: 100%;
   height: 200px;
   object-fit: contain;
@@ -42,18 +53,18 @@
   cursor: pointer;
 }
 
-.Cart .product-card .product-details .product-quantity{
+.Cart .product-card .product-details .product-quantity {
   width: fit-content;
   border: 1px solid #c3c3c3;
   margin: 10px 0;
   padding: 5px 10px;
   border-radius: 9px;
 }
-.Cart .product-card .product-details .product-quantity button{
+.Cart .product-card .product-details .product-quantity button {
   background-color: transparent;
-  color: #333; 
-  padding: 5px 10px; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -53,7 +53,8 @@ header {
 }
 .shoe-list .shoe-card button,
 .women-clothes-list .women-card button,
-.men-clothes-list .men-card button{
+.men-clothes-list .men-card button,
+.carousel-section .carousel-card button{
   width: 100px;
   height: 32px;
   background-color: rgb(204, 0, 0);

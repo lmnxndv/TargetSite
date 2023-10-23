@@ -4,6 +4,7 @@ interface Products {
   image: string;
   price: number;
   rating: number;
+  quant?:number
 }
 
 export const shoes: Products[] = [
@@ -308,5 +309,80 @@ export const menClothes: Products[] = [
       "https://myer-media.com.au/wcsstore/MyerCatalogAssetStore/images/77/772/7864/1/1/136793320/136793320_1_720x928.webp",
     price: 54.99,
     rating: 4.7,
+  },
+];
+
+export const carousel: Products[] = [
+  {
+    id: 1,
+    name: "Blogilates Loop Bands - 4pk",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_872b133a-a583-4822-8160-98871145e5c5?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 49.99,
+    rating: 4.5,
+  },
+  {
+    id: 2,
+    name: "Stanley 40oz Stainless Steel H2.0 FlowState Quencher Tumbler",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_06521735-c369-4118-84d3-2a73d54409d2?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 39.99,
+    rating: 4.2,
+  },
+  {
+    id: 3,
+    name: "Fenty Snackz by Fenty Beauty by Rihanna Mini Killawatt Freestyle Highlighter - .981oz - Ulta Beauty",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_6cf43629-8ce1-4a76-b169-b71949c1f4bf?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 29.99,
+    rating: 4.8,
+  },
+  {
+    id: 4,
+    name: "Dyson Corrale Hair Straightener - Ulta Beauty",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_9a8bf48d-cd69-4d19-8020-481a56357795?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 59.99,
+    rating: 4.0,
+  },
+  {
+    id: 5,
+    name: "OSEA Face and Body Bestsellers Kit - 2.39oz/2pc - Ulta Beauty",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_e4c09d02-909a-421a-9212-1489812d6670?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 69.99,
+    rating: 4.6,
+  },
+  {
+    id: 6,
+    name: "Stanley 2pk 10oz Stainless Steel Everyday Go Tumblers",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_32b55207-6dec-4496-a0ca-5b21246180be?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 34.99,
+    rating: 4.3,
+  },
+  {
+    id: 7,
+    name: "OSEA Undaria Algae Body Butter - 6.7oz - Ulta Beauty",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_55fef087-9dd6-4f81-85e4-44491e55fcd0?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 19.99,
+    rating: 4.4,
+  },
+  {
+    id: 8,
+    name: "Owala 24oz Stainless Steel Straw Tumbler - Lime Light",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_3eca8969-7824-4f84-92b7-dc34c53214f8?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 44.99,
+    rating: 4.1,
+  },
+  {
+    id: 9,
+    name: "Beekman 1802 Best Sellers Skincare Set - 1.66 fl oz - Ulta Beauty",
+    image:
+      "https://target.scene7.com/is/image/Target/GUEST_0bf16c75-1482-4a75-a1c4-67cc399071d4?wid=1200&hei=1200&qlt=80&fmt=webp",
+    price: 79.99,
+    rating: 4.2,
   },
 ];

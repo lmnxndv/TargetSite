@@ -1,0 +1,35 @@
+.subFooter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(51, 51, 51);
+}
+.subFooter-container .subFooter-icons {
+  display: flex;
+}
+.subFooter-container .subFooter-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(102, 102, 102);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.subFooter-container .subFooter-details a ,
+.subFooter-container .subFooter-details span{
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: all .3s;
+}
+
+.subFooter-container .subFooter-details a:hover{
+    color: rgb(102, 102, 102);
+}

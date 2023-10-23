@@ -1,7 +1,7 @@
 import { SearchOutlined } from "@ant-design/icons"
 import './style.css'
 
-const SearchBar = () => {
+const SearchBar: React.FC = () => {
   return (
     <div className="Searchbar">
         <input type="text" placeholder="What can we help you find?" />
