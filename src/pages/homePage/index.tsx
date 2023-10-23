@@ -1,4 +1,5 @@
 import CarouselSection from "../../Components/CarouselSection";
+import GiftSection from "../../Components/GiftSection";
 import StyledRow from "../../Components/StyledRow";
 import WelcomePage from "../../Components/welcomePage/WelcomePage";
 import "./style.css";
@@ -9,6 +10,7 @@ const HomePage = () => {
       <WelcomePage />
       <StyledRow />
       <CarouselSection/>
+      <GiftSection/>
     </div>
   );
 };

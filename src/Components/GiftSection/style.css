@@ -1,0 +1,35 @@
+.gift-container {
+  background: rgb(248, 245, 236);
+  padding: 0 0 20px;
+}
+.gift-container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gift-title h1 {
+  font-size: 36px;
+  margin: 55px 0 10px 0;
+  color: #cc0000;
+}
+.gift-container .gift-details .gift-picture,
+.gift-container .gift-info {
+  display: flex;
+  justify-content: space-around;
+}
+.gift-container .gift-details .gift-picture img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  margin: 8px;
+}
+.gift-container .gift-info a {
+    text-decoration: none;
+    color: #333;
+  text-align: center;
+}
+.gift-container .gift-info a:hover{
+    text-decoration: underline;
+}

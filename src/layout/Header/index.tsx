@@ -1,8 +1,5 @@
 import SearchBar from "./SearchBar";
 import Categories from "./Categories";
-import Deals from "./Deals";
-import Delivery from "./Delivery";
-import News from "./News";
 import "./style.css";
 import SignIn from "./SignIn";
 import { Link } from "react-router-dom";
@@ -23,9 +20,6 @@ const Header = () => {
             </Link>
           </div>
           <Categories />
-          <Deals />
-          <News />
-          <Delivery />
           <SearchBar />
           <SignIn />
           <Cart/>
