@@ -1,11 +1,11 @@
-import Slider from "react-slick";
+import React, { useCallback } from "react";
 import { useParams } from "react-router";
-import "./style.css";
+import Slider from "react-slick";
 import { Rate } from "antd";
 import { UseAppDispatch } from "../../hooks/hook";
 import { addToCart } from "../../redux/cartSlice";
 import { allProductsArray } from "../../data/productsData";
-import React from "react";
+import "./style.css";
 
 const SinglePage: React.FC = () => {
   const { prodId } = useParams();
@@ -13,7 +13,7 @@ const SinglePage: React.FC = () => {
 
   const dispatch = UseAppDispatch();
 
-  const handleAddToCart = () => {
+  const handleAddToCart = useCallback(() => {
     if (product) {
       const cartItem = {
         id: product.id,
@@ -26,7 +26,7 @@ const SinglePage: React.FC = () => {
       };
       dispatch(addToCart(cartItem));
     }
-  };
+  }, [product]);
 
   const settings = {
     dots: true,
@@ -49,13 +49,13 @@ const SinglePage: React.FC = () => {
       <div className="single-page-title">
         <h1>{product?.name}</h1>
         <Rate disabled defaultValue={product?.rating} />
-        <p>${product?.price}</p>{" "}
+        <p>${product?.price}</p>
         <div className="btns">
           <button className="addToCart" onClick={handleAddToCart}>
             Add TO CART
-          </button>{" "}
-        </div>{" "}
-      </div>{" "}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

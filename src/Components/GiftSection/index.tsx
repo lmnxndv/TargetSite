@@ -20,7 +20,6 @@ const GiftSection = () => {
           </div>
           <div className="gift-info">
             <a href="#">
-              {" "}
               <h2>Bullseye’s Top Toys</h2>
               <p>
                 Explore the hottest picks of the season to find a gift for any
@@ -28,7 +27,6 @@ const GiftSection = () => {
               </p>
             </a>
             <a href="#">
-              {" "}
               <h2>Top Tech Gifts HQ</h2>
               <p>Your helpful holiday guide to the tech everyone wants.</p>
             </a>
@@ -52,7 +50,6 @@ const GiftSection = () => {
           </div>
           <div className="gift-info">
             <a href="#">
-              {" "}
               <h2>All things Christmas</h2>
               <p>Everything you need to get in the holiday spirit.</p>
             </a>

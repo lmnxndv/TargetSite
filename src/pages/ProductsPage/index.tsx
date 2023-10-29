@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Rate } from "antd";
-import { UseAppDispatch, useAppSelector } from "../../hooks/hook";
+import { UseAppDispatch } from "../../hooks/hook";
 import { addToCart } from "../../redux/cartSlice";
 import {
   addToFavorites,
@@ -11,8 +11,6 @@ import { Products } from "../../data/productsData";
 
 const ProductsPage = ({ products }: { products: Products[] }) => {
   const [isFavorite, setIsFavorite] = useState<string[]>([]);
-  const favItems = useAppSelector((state) => state.favorites.favItems);
-  console.log("favItems", favItems);
 
   const dispatch = UseAppDispatch();
 

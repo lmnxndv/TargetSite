@@ -9,8 +9,8 @@ const HomePage = () => {
     <div className="AppContainer">
       <WelcomePage />
       <StyledRow />
-      <CarouselSection/>
-      <GiftSection/>
+      <CarouselSection />
+      <GiftSection />
     </div>
   );
 };
