@@ -19,6 +19,8 @@ const App: React.FC = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/cart" element={<AddToCart />} />
+        <Route path="/products/:prodId" element={<SinglePage />} />
         <Route
           path={`/product/${Categories.SHOES}`}
           element={<ProductsPage products={shoes} />}
@@ -31,8 +33,6 @@ const App: React.FC = () => {
           path={`/product/${Categories.MAN}`}
           element={<ProductsPage products={menClothes} />}
         />
-        <Route path="/cart" element={<AddToCart />} />
-        <Route path="/products/:prodId" element={<SinglePage />} />
       </Routes>
       <Footer />
       <SubFooter />

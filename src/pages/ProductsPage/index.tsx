@@ -47,9 +47,9 @@ const ProductsPage = ({ products }: { products: Products[] }) => {
   };
 
   return (
-    <div className="women-clothes-list">
+    <div className="products-clothes-list">
       {products.map((clothes) => (
-        <div className="women-card" key={clothes.id}>
+        <div className="products-card" key={clothes.id}>
           <Link to={`/products/${clothes.id}`} key={clothes.id}>
             <img src={clothes.image} alt={clothes.name} />
             <h3>{clothes.name}</h3>

@@ -4,6 +4,7 @@ import { carousel } from "../../data/productsData";
 import "./style.css";
 import { UseAppDispatch } from "../../hooks/hook";
 import { addToCart } from "../../redux/cartSlice";
+import { Link } from "react-router-dom";
 
 interface CarouselSectionProps {}
 const CarouselSection: React.FC<CarouselSectionProps> = () => {
@@ -63,7 +64,9 @@ const CarouselSection: React.FC<CarouselSectionProps> = () => {
       <Slider {...settings}>
         {carousel.map((item) => (
           <div className="carousel-card" key={item.id}>
-            <img src={item.image} alt="carousel" />
+            <Link to={`/products/${item.id}`}>
+              <img src={item.image} alt="carousel" />
+            </Link>
             <p>{item.name}</p>
             <p>${item.price}</p>
             <button type="submit" onClick={() => handleAddToCart(item)}>
