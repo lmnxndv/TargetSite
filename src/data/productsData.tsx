@@ -565,6 +565,9 @@ export const carousel: Products[] = [
     rating: 4.5,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_872b133a-a583-4822-8160-98871145e5c5?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -575,6 +578,9 @@ export const carousel: Products[] = [
     rating: 4.2,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_06521735-c369-4118-84d3-2a73d54409d2?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -585,6 +591,9 @@ export const carousel: Products[] = [
     rating: 4.8,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_6cf43629-8ce1-4a76-b169-b71949c1f4bf?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -595,6 +604,9 @@ export const carousel: Products[] = [
     rating: 4.0,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_9a8bf48d-cd69-4d19-8020-481a56357795?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -605,6 +617,9 @@ export const carousel: Products[] = [
     rating: 4.6,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_e4c09d02-909a-421a-9212-1489812d6670?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -615,6 +630,9 @@ export const carousel: Products[] = [
     rating: 4.3,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_32b55207-6dec-4496-a0ca-5b21246180be?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -625,6 +643,9 @@ export const carousel: Products[] = [
     rating: 4.4,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_55fef087-9dd6-4f81-85e4-44491e55fcd0?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -635,6 +656,9 @@ export const carousel: Products[] = [
     rating: 4.1,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_3eca8969-7824-4f84-92b7-dc34c53214f8?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
   {
     id: uuid(),
@@ -645,6 +669,9 @@ export const carousel: Products[] = [
     rating: 4.2,
     quant: 0,
     favorite: false,
+    thumbnail: [
+      "https://target.scene7.com/is/image/Target/GUEST_0bf16c75-1482-4a75-a1c4-67cc399071d4?wid=1200&hei=1200&qlt=80&fmt=webp",
+    ],
   },
 ];
 
@@ -652,4 +679,5 @@ export const allProductsArray = [
   ...shoes,
   ...womenClothes,
   ...menClothes,
+  ...carousel,
 ];
