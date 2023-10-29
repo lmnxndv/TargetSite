@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { getLocalStorage } from "../helpers/getLocaleStorage";
 
 interface FavoriteItem {
   id: string;
@@ -14,7 +15,7 @@ interface FavoriteState {
   favItems: FavoriteItem[];
 }
 const initialState: FavoriteState = {
-  favItems: [],
+  favItems: getLocalStorage("favoriteProducts"),
 };
 
 export const FavoriteSlice = createSlice({

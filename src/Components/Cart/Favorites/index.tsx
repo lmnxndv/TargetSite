@@ -1,11 +1,9 @@
+import React, { useEffect } from "react";
 import { Rate } from "antd";
 import { UseAppDispatch, useAppSelector } from "../../../hooks/hook";
 import "./style.css";
-import {
-  removeFromFavorites,
-} from "../../../redux/favoritesSlice";
+import { removeFromFavorites } from "../../../redux/favoritesSlice";
 import { addToCart } from "../../../redux/cartSlice";
-import React from "react";
 
 interface FavoriteItem {
   id: string;
@@ -29,6 +27,10 @@ const Favorites: React.FC = () => {
   const handleAddToCart = (cartItem: FavoriteItem) => {
     dispatch(addToCart(cartItem));
   };
+
+  useEffect(() => {
+    localStorage.setItem("favoriteProducts", JSON.stringify(favItems));
+  }, [favItems]);
 
   return (
     <div className="favorites">
@@ -92,4 +94,4 @@ const Favorites: React.FC = () => {
   );
 };
 
-export default Favorites;
+export default React.memo(Favorites);

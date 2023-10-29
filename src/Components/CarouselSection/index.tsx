@@ -54,6 +54,7 @@ const CarouselSection: React.FC<CarouselSectionProps> = () => {
   }
 
   const handleAddToCart = (clothes: clothes) => {
+    clothes.quant = 1;
     dispatch(addToCart(clothes));
   };
   return (

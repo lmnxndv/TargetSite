@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Rate } from "antd";
 import { CloseOutlined } from "@ant-design/icons";
 import { UseAppDispatch, useAppSelector } from "../../../hooks/hook";
 import {
-  addToCart,
   quantDecrease,
   quantIncrease,
   removeCart,
@@ -13,6 +12,11 @@ import Favorites from "../Favorites";
 
 const AddToCart: React.FC = () => {
   const cartItems = useAppSelector((state) => state.cart.cartItems);
+
+  useEffect(() => {
+    localStorage.setItem("cartProducts", JSON.stringify(cartItems));
+  }, [cartItems]);
+
   const dispatch = UseAppDispatch();
 
   const handleRemoveFromCart = (productId: string) => {
@@ -40,13 +44,13 @@ const AddToCart: React.FC = () => {
                 <div className="product-details">
                   <div className="product-title">
                     <p>{product?.name}</p>
-                    <p> ${product.price?.toFixed(2)}</p>
+                    <p> ${product.price.toFixed(2)}</p>
                     <Rate disabled defaultValue={product?.rating} />
                     <button
                       type="submit"
                       onClick={() => handleRemoveFromCart(product?.id)}
                     >
-                      <CloseOutlined />{" "}
+                      <CloseOutlined />
                     </button>
                   </div>
                   <div className="product-quantity">
@@ -73,4 +77,4 @@ const AddToCart: React.FC = () => {
   );
 };
 
-export default AddToCart;
+export default React.memo(AddToCart);

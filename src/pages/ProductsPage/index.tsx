@@ -83,4 +83,4 @@ const ProductsPage = ({ products }: { products: Products[] }) => {
   );
 };
 
-export default ProductsPage;
+export default React.memo(ProductsPage);

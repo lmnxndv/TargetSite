@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { getLocalStorage } from "../helpers/getLocaleStorage";
 
 interface CartItem {
   id: string;
@@ -14,7 +15,7 @@ interface CartState {
 }
 
 const initialState: CartState = {
-  cartItems: [],
+  cartItems: getLocalStorage("cartProducts"),
 };
 
 export const CartSlice = createSlice({
@@ -41,6 +42,7 @@ export const CartSlice = createSlice({
       const itemIncrease = state.cartItems.find(
         (item) => item.id === action.payload
       );
+
       if (itemIncrease) {
         itemIncrease.quant += 1;
         itemIncrease.price += itemIncrease.price / (itemIncrease.quant - 1);
