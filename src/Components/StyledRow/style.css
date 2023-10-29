@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 120px 0 25px 0;
+  margin: 60px 0 25px 0;
 }
 
 .styledRow .container .row-cards {
@@ -45,5 +45,4 @@
   position: absolute;
   top: 30px;
   left: 40px;
-  z-index: 1;
 }

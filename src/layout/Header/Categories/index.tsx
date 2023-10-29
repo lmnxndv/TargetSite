@@ -1,53 +1,34 @@
-import { DownOutlined, UserOutlined } from "@ant-design/icons";
+import { DownOutlined } from "@ant-design/icons";
 import { Button, Dropdown, Menu, Space } from "antd";
+import headerData from "../../../data/headerCategoriesData";
+import './style.css'
 
-
-const Categories = () => {
-    const items = [
-        {
-          label: "1st menu item",
-          key: "1",
-          icon: <UserOutlined />,
-        },
-        {
-          label: "2nd menu item",
-          key: "2",
-          icon: <UserOutlined />,
-        },
-        {
-          label: "3rd menu item",
-          key: "3",
-          icon: <UserOutlined />,
-          danger: true,
-        },
-        {
-          label: "4th menu item",
-          key: "4",
-          icon: <UserOutlined />,
-          disabled: true,
-        },
-      ];
-    
-      const menu = (
-        <Menu>
-          {items.map((item) => (
-            <Menu.Item key={item.key} icon={item.icon} disabled={item.disabled}>
-              {item.label}
-            </Menu.Item>
-          ))}
-        </Menu>
-      );
+const Categories: React.FC = () => {
+  
+  
   return (
-    <div>
-         <Dropdown overlay={menu}>
-            <Button type="text" className="custom-button">
-              <Space>
-                Categories <DownOutlined />
-              </Space>
-            </Button>
-          </Dropdown>
+    <div className="categories">
+      {headerData.sections.map((section) => (
+        <Dropdown key={section.title} overlay={renderDropdownMenu(section.links)}>
+          <Button type="text" className="custom-button">
+            <Space>
+              {section.title} <DownOutlined />
+            </Space>
+          </Button>
+        </Dropdown>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Categories
+const renderDropdownMenu = (links) => (
+  <Menu>
+    {links.slice(0, 4).map((link) => (
+      <Menu.Item key={link.url}>
+        <a href={link.url}>{link.text}</a>
+      </Menu.Item>
+    ))}
+  </Menu>
+);
+
+export default Categories;

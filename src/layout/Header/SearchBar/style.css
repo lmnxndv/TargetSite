@@ -1,5 +1,8 @@
 .Searchbar {
-  width: 45%;
+  width: 100%;
+}
+.Searchbar .search-input {
+  width: 100%;
   height: 45px;
   background-color: #f1f1f1fc;
   display: flex;
@@ -31,4 +34,61 @@
 .Searchbar button i:hover {
   color: red;
   transition: all ease-in-out 0.3s;
+}
+
+.Searchbar .result-container {
+  width: 573.25px;
+  max-height: calc(100% - 130px);
+  inset: 75px 720.938px 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 48px;
+  position: fixed;
+  z-index: 1051;
+}
+.Searchbar .result-container div {
+  background-color: white;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px 10px 0;
+  overflow: auto;
+}
+
+.Searchbar .result-container div ul {
+  list-style: outside none none;
+  margin: 0px;
+  padding: 0px;
+  margin-block: 0px;
+  margin-inline: 0px;
+  padding-inline-start: 0px;
+}
+.Searchbar .result-container div ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: outside none none;
+  border-bottom: 1px solid #c3c3c3;
+  padding: 13px;
+  color: #777;
+}
+.Searchbar .result-container div ul li img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 0 10px;
+}
+.Searchbar .result-container div ul li a{
+  color: #333;
+  text-decoration: none;
+}
+.Searchbar .result-container div ul li a:hover{
+  text-decoration: underline;
+}
+
+.container-bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }

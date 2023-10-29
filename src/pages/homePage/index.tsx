@@ -1,14 +1,18 @@
-import StyledRow from "../../Components/StyledRow"
-import WelcomePage from "../../Components/welcomPage/WelcomePage"
-
+import CarouselSection from "../../Components/CarouselSection";
+import GiftSection from "../../Components/GiftSection";
+import StyledRow from "../../Components/StyledRow";
+import WelcomePage from "../../Components/welcomePage/WelcomePage";
+import "./style.css";
 
 const HomePage = () => {
   return (
-    <div>
-      <WelcomePage/>
-      <StyledRow/>
+    <div className="AppContainer">
+      <WelcomePage />
+      <StyledRow />
+      <CarouselSection />
+      <GiftSection />
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

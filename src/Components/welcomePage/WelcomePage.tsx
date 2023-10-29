@@ -13,7 +13,7 @@ const WelcomePage = () => {
             <p>
               <b>
                 Join Target◎circle<span style={{ fontSize: "35%" }}>TM</span>
-              </b>{" "}
+              </b>
               for free & score new deals every day.
             </p>
           </div>

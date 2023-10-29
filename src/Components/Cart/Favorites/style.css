@@ -1,0 +1,60 @@
+.favorites {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.favorites .empty {
+  width: 80%;
+}
+.favorites .empty img {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+}
+
+.fav-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 6px 12px 4px,
+    rgba(0, 0, 0, 0.04) 0px 4px 10px 2px, rgba(0, 0, 0, 0.06) 0px 2px 8px,
+    rgba(0, 0, 0, 0.04) 0px 2px 4px;
+}
+.fav-card .fav-picture img {
+  width: 110px;
+  height: 110px;
+  border-radius: 14px;
+}
+.fav-details {
+  display: flex;
+}
+.fav-details .fav-title {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 18px;
+}
+.favorites-basket {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fav-card .fav-price {
+  width: 20%;
+  border-left: 1px solid black;
+  padding: 10px;
+  font-size: 19px;
+}
+.fav-btns{
+  display: flex;
+  margin: 15px 0;
+}
+
