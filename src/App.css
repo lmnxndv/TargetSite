@@ -31,13 +31,14 @@ header {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  position: relative;
 }
-.shoe-list .shoe-card img,
-.shoe-list .shoe-card h3,
-.shoe-list .shoe-card p,
-.shoe-list .shoe-card button {
+.addToCart,
+.favorite,
+.ant-rate {
   margin: 10px 0;
 }
+
 .shoe-list .shoe-card img,
 .women-clothes-list .women-card img,
 .men-clothes-list .men-card img {
@@ -51,10 +52,7 @@ header {
 .men-clothes-list .men-card img:hover {
   transform: scaleX(-1);
 }
-.shoe-list .shoe-card button,
-.women-clothes-list .women-card button,
-.men-clothes-list .men-card button,
-.carousel-section .carousel-card button{
+.addToCart {
   width: 100px;
   height: 32px;
   background-color: rgb(204, 0, 0);
@@ -68,18 +66,38 @@ header {
   opacity: 0.7;
   transition: 0.2s;
 }
+.favorite, .removeFromFav {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: 17px;
+  color: #777;
+  margin: 10px 5px;
+  cursor: pointer;
+}
 
-.shoe-list .shoe-card button:hover,
-.women-clothes-list .women-card button:hover,
-.men-clothes-list .men-card button:hover {
+.shoe-list .shoe-card .favorite,
+.women-clothes-list .women-card .favorite,
+.men-clothes-list .men-card .favorite {
+  position: absolute;
+  bottom: 0;
+  right: 8px;
+}
+.addToCart:hover{
   opacity: 1;
 }
 .shoe-list a,
-.women-clothes-list a, .men-clothes-list a {
+.women-clothes-list a,
+.men-clothes-list a {
   text-decoration: none;
   color: #333;
 }
 
 .ant-rate {
   font-size: 14px;
+}
+.active {
+  color: rgb(204, 0, 0);
 }

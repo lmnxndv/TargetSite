@@ -1,12 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface CartItem {
-  id: number;
+  id: string;
   name: string;
   image: string;
   price: number;
   rating: number;
   quant: number;
+  favorite: boolean;
 }
 interface CartState {
   cartItems: CartItem[];
@@ -28,16 +29,15 @@ export const CartSlice = createSlice({
         findItem.quant += 1;
         findItem.price += action.payload.price;
       } else {
-        action.payload.quant = 1;
         state.cartItems.push(action.payload);
       }
     },
-    removeCart: (state, action: PayloadAction<number>) => {
+    removeCart: (state, action: PayloadAction<string>) => {
       state.cartItems = state.cartItems.filter(
         (item) => item.id !== action.payload
       );
     },
-    quantIncrease: (state, action: PayloadAction<number>) => {
+    quantIncrease: (state, action: PayloadAction<string>) => {
       const itemIncrease = state.cartItems.find(
         (item) => item.id === action.payload
       );
@@ -46,7 +46,7 @@ export const CartSlice = createSlice({
         itemIncrease.price += itemIncrease.price / (itemIncrease.quant - 1);
       }
     },
-    quantDecrease: (state, action: PayloadAction<number>) => {
+    quantDecrease: (state, action: PayloadAction<string>) => {
       const itemDecrease = state.cartItems.find(
         (item) => item.id === action.payload
       );
